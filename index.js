@@ -16,8 +16,9 @@ app.use(express.urlencoded({extended: true}))
 
 app.use('/ANightOut', venueController)
 
-const port = process.env.PORT || 5000
 
-app.listen(port, () => {
-    console.log('app is up and running on p'+ port)
+app.set('port', process.env.PORT || 5000)
+
+app.listen(app.get('port'), () => {
+    console.log(`✅ PORT: ${app.get("port")} 🌟`);
 })
