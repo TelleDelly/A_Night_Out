@@ -10,7 +10,7 @@
     </form>
     <h3>Genres</h3>
     <%artist.genres.forEach((genre) => { %>
-        <li>
+        <li class="genre-button">
             <p><%=genre%></p>
             <form action="/ANightOut/<%=venue.id%>/<%=artist.id%>/<%=genre%>/deleteGenre?_method=DELETE" method="POST">
                 <input class="button" type="submit" value="Delete">

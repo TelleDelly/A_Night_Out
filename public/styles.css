@@ -9,18 +9,20 @@ button color:  #88a43e
 
 html{
     display: flex;
+    
 }
 
 body{
     color: #faf2b3;
     background-color: #1f212d;
     margin: 0px;
+    font-size: 1vw;
 }
 
 header{
     color: #3e5a55;
     background-color: #cdcb80;
-    height: 10vh;
+    height: fit-content;
     width: 100vw;
     display:inline-flex;
     justify-content: space-around;
@@ -40,6 +42,7 @@ header div{
 
 header h1 {
     margin: 0;
+    padding: 1rem;
 }
 
 footer{
@@ -116,12 +119,28 @@ li{
     padding: 1rem;
 }
 
+.artist-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
 .cancel-edit-button{
     margin: 1rem;
+}
+
+.genre-button{
+    display: flex;
 }
 
 
 fieldset{
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 3vw;
+    }
 }
