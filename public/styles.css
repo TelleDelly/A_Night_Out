@@ -51,6 +51,11 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
 }
 
 footer h5{
