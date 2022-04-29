@@ -3,7 +3,8 @@ const Venue = require('../models/venue-model')
 
 Venue.deleteMany({})
 .then(() => {
-    Venue.insertMany(seed)
-    .then(console.log)
-    .catch(console.error)
+    return Venue.insertMany(seed)
 })
+.then(console.log)
+.catch(console.error)
+.finally(() => process.exit())
