@@ -1,11 +1,8 @@
-const { Router } = require('express')
 const express = require('express')
-const { del } = require('express/lib/application')
-const req = require('express/lib/request')
-const { send } = require('express/lib/response')
 const venueRouter = express.Router()
 
 const Venue = require('../models/venue-model')
+
 venueRouter.get('/', (req, res) =>{
     Venue.find({})
     .then((venues) => res.render('index', {venues: venues}))
