@@ -1,0 +1,64 @@
+<link rel="stylesheet" type="text/css" href="/styles.css">
+<div class="main-container">
+<div class="header-info">
+<h1>Name: <%=venue.name%></h1>
+<a class="button" href="<%=venue.website%>"><%=venue.name%>'s Website</a>
+<a class="button" href="/ANightOut">Back</a>
+<a class="button" href="/ANightOut/<%=venue._id%>/edit">Edit</a>
+</div>
+<div class="address-info">
+    <h1>Address</h1>
+    <div>
+        <p>PO: <%=venue.address.poline%></p>
+    </div>
+    <div>
+        <p>City: <%=venue.address.city%></p>
+        <p>State: <%=venue.address.state%></p>
+        <p>Zip: <%=venue.address.zip%></p>
+    </div>
+</div>
+<div class="description-info">
+    <h1>Description</h1>
+    <h3><%=venue.description%></h3>
+</div>
+<div class="comment-container">
+    <h1>Comments</h1>
+    <form action="/ANightOut/<%=venue.id%>/newComment" method="POST">
+        <h3>Add a comment</h3>
+        <label for="title">Title: </label>
+        <input type="text" id="title" name="title"/>
+        <label for="content">Comment: </label>
+        <input type="text" id="content" name="content"/>
+        <input class="button" type="submit" value="Add Comment"/>
+    </form>
+    <ul>
+        <% venue.comments.forEach((comments) => { %>
+            <li>
+                <h2><%=comments.title%></h2>
+                <h4><%=comments.content%></h4>
+                <form action="/ANightOut/<%=venue.id%>/<%=comments.id%>/deleteComment?_method=DELETE" method="POST">
+                    <input class="button" type="submit" value="Delete">
+                </form>
+            </li>
+        <%})%>
+    </ul>
+</div>
+<div class="artist-container">
+    <h1>Artists</h1>
+    <form action="/ANightOut/<%=venue.id%>/newArtist" method="POST">
+        <h3>Add a Artist</h3>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name"/>
+        <input class="button" type="submit" value="Add Artist"/>
+    </form>
+    <ul>
+        <% venue.artists.forEach((artist) => { %>
+            <li>
+                <h3><%=artist.name%></h3>
+                <a class="button" href="/ANightOut/<%=venue.id%>/<%=artist.id%>">Show</a>
+                
+            </li>
+        <%})%>
+    </ul>
+</div>
+</div>

@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Kremwerk",
+        "website": "https://www.kremwerk.com/",
+        "description": "Dance club with DJs, stand-up comedy & burlesque shows in an industrial, ultramodern space.",
+        "address": {
+            "poline": "1809 Minor Ave #10",
+            "city": "Seattle",
+            "state": "WA",
+            "zip": 98101
+        },
+        "lat": "47.61746",
+        "long": "-122.33101",
+        "comments": [{
+            "title": "Awesome First Club Exprience",
+            "content": "I went with my friends to expreience the night life. It was awesome"
+        },
+        {
+            "title": "Food and Drinks",
+            "content": "Food and drinks were alright"
+        }
+        ],
+        "likes": 1242,
+        "artists": [
+            {
+                "name": "Total Enormous Extinct Dinosaurs",
+                "genres": ["electronic", "house", "slow"]
+            }
+        ]
+    },
+    {
+        "name": "Q Nightclub",
+        "website": "https://qnightclub.com/",
+        "description": "Cocktails, dancing & music in a multi-floor night spot with moody, modern decor & private booths.",
+        "address": {
+            "poline": "1426 Broadway",
+            "city": "Seattle",
+            "state": "WA",
+            "zip": 98122
+        },
+        "lat": "47.61398",
+        "long": "-122.32056",
+        "comments": [{
+            "title": "IT was hugeeeee",
+            "content": "Absolutely massive"
+        },
+        {
+            "title": "Found the love of my life",
+            "content": "She was a danceer"
+        }
+        ],
+        "likes": 442,
+        "artists": [
+            {
+                "name": "Total Enormous Extinct Dinosaurs",
+                "genres": ["electronic", "house", "slow"]
+            },
+            {
+                "name": "Oliver",
+                "genres": ["electronic", "Big room", "House", "uptempo"]
+            }
+        ]
+    }
+]

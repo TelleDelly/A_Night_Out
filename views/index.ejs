@@ -1,0 +1,24 @@
+<link rel="stylesheet" type="text/css" href="/styles.css">
+
+<div class="new-button-container">
+    <a class="button newVenue" href="/ANightOut/newVenue">New Venue</a>
+</div>
+<div class="index-main-content">
+<ul class="venue-list">
+<% venues.forEach((venue) => { %>
+    <div>
+    <li class="venue-list-item">
+        <h1><%=venue.name%></h1>
+        <p><%=venue.description%></p>
+        <div class="button-container">
+        <a class="button" href="<%=venue.website%>">Website</a>
+        <a class="button" href="/ANightOut/<%=venue._id%>">View</a>
+        <form action="/ANightOut/<%=venue.id%>?_method=DELETE" method="POST">
+            <input class="button delete" type="submit" value="Delete">
+        </form>
+        </div>
+    </li>
+    </div>
+    <% }) %>
+</ul>
+</div>

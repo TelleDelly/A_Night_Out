@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="/styles.css">
+
+<div class="cancel-edit-button">
+    <a class="button" href="/ANightOut/<%=venue.id%>">Cancel</a>
+</div>
+
+<div class="main-container">
+   
+    <form action="/ANightOut/<%=venue.id%>/?_method=put" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" value="<%=venue.name%>">
+        <label for="website">Website: </label>
+        <input type="text" id="website" name="website" value="<%=venue.website%>"/>
+        <div>
+            <h1>Address</h1>
+            <label for="poline">PO: </label>
+            <input type="text" id="poline" name="address.poline" value="<%=venue.address.poline%>"/>
+            <label for="city">City: </label>
+            <input type="text" id="city" name="address.city" value="<%=venue.address.city%>"/>
+            <label for="state">State: </label>
+            <input type="text" id="state" name="address.state" value="<%=venue.address.state%>"/>
+            <label for="zip">Zip: </label>
+            <input type="text" id="zip" name="address.zip" value="<%=venue.address.zip%>"/>
+        </div>
+        <div>
+            <h1>Description</h1>
+            <label for="description">Description</label>
+            <input type="text" id="description" size="35" name="description" value="<%=venue.description%>"/>
+        </div>
+        <input class="button" type="submit" value="Update"/>
+    </form>
+</div>

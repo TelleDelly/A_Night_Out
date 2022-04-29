@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="/styles.css">
+<div class="new-venue-form-container">
+    <a class="button cancel" href="/ANightOut">Cancel</a>
+    <form action="/ANightOut/" method="POST">
+        
+        <fieldset>
+            <legend>Name</legend>
+            <input type="text" id="name" name="name">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Website</legend>
+            <input type="text" id="website" name="website"/>
+        </fieldset>
+            <fieldset>
+            <legend>Address</legend>
+            <label for="address.poline">PO: </label>
+            <input type="text" id="poline" name='address.poline'/>
+            <label for="address.city">City: </label>
+            <input type="text" id="city" name="address.city"/>
+            <label for="address.state">State: </label>
+            <input type="text" id="state" name="address.state"/>
+            <label for="address.zip">Zip: </label>
+            <input type="number" id="zip" name="address.zip" />
+            </fieldset>
+    
+        <fieldset>
+            <legend>Description</legend>
+            <input type="text" id="description" name="description"/>
+        </fieldset>
+        <input class="button submit-new" type="submit" value="Submit"/>
+    </form>
+</div>

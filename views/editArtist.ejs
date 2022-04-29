@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="/styles.css">
+<h1>Edit <%=artist.name%></h1>
+<a class="button" href="/ANightOut/<%=venue.id%>/<%=artist.id%>">Back</a>
+<ul>
+    <h3>Add a new Genre</h3>
+    <form action="/ANightOut/<%=venue.id%>/<%=artist.id%>/addGenre" method="POST">
+        <label for="genres">Genre</label>
+        <input type="text" name="genre"/>
+        <input class="button" type="submit" value="Add Genre"/>
+    </form>
+    <h3>Genres</h3>
+    <%artist.genres.forEach((genre) => { %>
+        <li>
+            <p><%=genre%></p>
+            <form action="/ANightOut/<%=venue.id%>/<%=artist.id%>/<%=genre%>/deleteGenre?_method=DELETE" method="POST">
+                <input class="button" type="submit" value="Delete">
+            </form>
+        </li>
+    <%})%>
+</ul>
