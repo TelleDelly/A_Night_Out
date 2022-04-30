@@ -152,3 +152,9 @@ fieldset{
         font-size: 3vw;
     }
 }
+
+@media only screen and(max-width: 1024px){
+    body{
+        font-size: 4vw;
+    }
+}
