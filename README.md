@@ -14,10 +14,13 @@ A Night Out is a music venue review site where users can post about events or ve
 ## Views
 The landing page
 ![Index of A Night Out](/assets/index.png)
+
 Individual venue view
 ![The show page of a venue](/assets/view.png)
+
 Edit form of a venue
 ![edit form of a venue](/assets/edit.png)
+
 The add form
 ![Form to add a new venue](/assets/add.png)
 
