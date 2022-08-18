@@ -24,7 +24,6 @@ Edit form of a venue
 The add form
 ![Form to add a new venue](/assets/add.png)
 
-## Access the site below
 
 
 

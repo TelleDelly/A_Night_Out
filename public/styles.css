@@ -80,7 +80,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 75%;
 }
 
 .button{
@@ -108,7 +108,7 @@ li{
 
 .venue-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
     grid-gap: 5%;
     padding: 1rem 1rem 1rem 1rem;
     margin: 1rem 1rem 1rem 1rem;
@@ -142,7 +142,10 @@ li{
 fieldset{
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
+
+
 
 @media only screen and (max-width: 600px){
     body{
